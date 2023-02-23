@@ -21,6 +21,15 @@ for (var i = 0; i < 8; i++) {
   addCircle(i * 500, [100 + 900, 800], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 500, [100 - 700, -800], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 500, [100 + 600, 800], emoji[Math.floor(Math.random() * emoji.length)]);
+
+  addCircle(i * 500, [100 + 20, 700], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 + 40, -700], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 - 600, -800], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 + 500, 800], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 - 1000, -800], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 + 900, 900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 - 700, -900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 500, [100 + 600, 900], emoji[Math.floor(Math.random() * emoji.length)]);
 }
 
 function addCircle(delay, range, color) {
@@ -31,7 +40,7 @@ function addCircle(delay, range, color) {
       color,
       {
         x: -0.10 + Math.random() * 10,
-        y: 8 + Math.random() * 18,
+        y: 8 + Math.random() * 20,
       },
       range
     );
